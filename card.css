@@ -1,7 +1,7 @@
 
 body{
-	background: rgb(224,11,124);
-background: linear-gradient(0deg, rgba(224,11,124,1) 0%, rgba(26,210,177,1) 100%);
+	background: rgb(167, 8, 93);
+background: linear-gradient(0deg, rgb(117, 11, 67) 0%, rgba(26,210,177,1) 100%);
 }
 
 /* nav login */

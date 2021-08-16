@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./crud.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+        <a class="active" href="#home">Maxijotar</a>
+
+    </div>
+
+    <section class="d-flex">
+
+        <form onsubmit="agregarJuego(event)">
+            <label for="img-card">imagen del juego</label>
+            <input type="text" id="img-card">
+
+            <label for="title-card">titulo del juego</label>
+            <input type="text" id="title-card">
+
+            <label for="sub-card">subtitulo</label>
+            <input type="text" id="sub-card">
+
+            <label for="price1">precio con descuento</label>
+            <input type="text" id="price1">
+
+            <label for="price2">precio sin descuento</label>
+            <input type="text" id="price2">
+
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+
+
+
+
+    </section>
+
+    <main>
+
+        <table class="table table-striped">
+            <thead>
+                <th scope="col">#</th>
+                <th scope="col">imagen</th>
+                <th scope="col">titulo</th>
+                <th scope="col">subtitulo</th>
+                <th scope="col">precio con descuento</th>
+                <th scope="col">precio sin descuento</th>
+            </thead>
+            <tbody id="tbody">
+
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </main>
+
+
+
+    <script src="./cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
