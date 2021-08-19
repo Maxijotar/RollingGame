@@ -1,5 +1,5 @@
 body {
-    background-image: url(Img/onair.svg);
+    background-image: url(Img/4735965.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -15,11 +15,14 @@ section {
     margin-top: 50px;
 }
 h1 {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'VT323';
+    font-size: 4rem;
     margin-bottom: 2rem;
+    color: cyan;
 }
-.formulario {
-    font-size: 1.5rem;
+.formulario label{
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
     color: cyan;
 }
 .boton {

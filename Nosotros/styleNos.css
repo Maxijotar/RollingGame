@@ -8,3 +8,18 @@ body {
 .navbar-brand{
     margin-left: 1rem;
 }
+
+.Texto1{
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    text-align: center;
+    color: aqua;
+}
+
+.nosotrosH{
+    height: 800px;
+}
+
+h1{
+    font-size: 8rem;
+}
