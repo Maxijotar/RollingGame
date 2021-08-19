@@ -1,0 +1,10 @@
+body {
+    background-image: url(Img/4735965.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar-brand{
+    margin-left: 1rem;
+}
