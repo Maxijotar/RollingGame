@@ -1,0 +1,29 @@
+body {
+    background-image: url(Img/onair.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+}
+.banner {
+    padding: 0px;
+}
+section {
+    margin-top: 50px;
+}
+h1 {
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 2rem;
+}
+.formulario {
+    font-size: 1.5rem;
+    color: cyan;
+}
+.boton {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
