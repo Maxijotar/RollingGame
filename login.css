@@ -1,0 +1,87 @@
+@media (min-width: 1199px){
+    body{
+        margin: 0%;
+        background: url(./imageneslogin/loginescritorio.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+@media (max-width: 1199px){
+    body{
+        margin: 0%;
+        background: url(./imageneslogin/loginmovil.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+.login-style{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.icon-color{
+    color: #ec0b88 ;
+}
+.label-style{
+    color: black;
+}
+.input-style{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 3px solid #ec0b88 ;
+    outline: none;
+    background-color: rgba(204, 202, 199, 0.562);
+    color: inherit;
+    caret-color: #ec0b88 ;
+}
+.button-iniciar{
+    background-color: #66f0d6;
+    border-radius: 10px;
+}
+.button-iniciar:hover{
+    background-color: #66f0d6;
+    transition: all 0.3s ease;
+}
+.frondoso{
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+}
+.create-login{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: rgba(204, 202, 199, 0.562);
+    border-radius: 10px;
+}
+.create-button{
+    color: #cccccc;
+    text-decoration: none;
+    
+}
+.create-button:hover{
+    color:rgba(0, 0, 0, 0.822);
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.button-iniciar:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.create-login h5 {
+    margin-left: 10px;
+}
+.create-login b:hover {
+    color:  #ec0b88 ;
+    text-decoration: none;
+}
