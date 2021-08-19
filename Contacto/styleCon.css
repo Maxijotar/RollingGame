@@ -15,8 +15,8 @@ section {
     margin-top: 50px;
 }
 h1 {
-    font-family: 'VT323';
-    font-size: 4rem;
+    font-family: 'VT323', monospace;
+    font-size: 6.2rem;
     margin-bottom: 2rem;
     color: cyan;
 }
@@ -28,4 +28,9 @@ h1 {
 .boton {
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.boton{
+    font-family: 'VT323', monospace;
+
 }
