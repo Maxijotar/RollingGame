@@ -1,8 +1,8 @@
-//LOGIN USERS
+//Login de Usuarios
 const formLogin = document.getElementById('formLogin');
 const userInput = document.getElementById('user');
 const passwordInput = document.getElementById('password');
-//ALERTAS: CONTRASEÑA INVÁLIDA, LOGUEO, SUSPENDIDO, CREACION
+//Alertas
 const alerta = document.getElementById('alerta');
 const alertaIn = document.getElementById('alertaIn');
 const userSuspended = document.getElementById('userSuspended');
@@ -10,14 +10,14 @@ const userAcount = document.getElementById('userAcount');
 const alertaCreate = document.getElementById('alertaCreate');
 const alertaAdmin = document.getElementById('alertaAdmin');
 
-//USER ADMIN
+//Admin
 const administrador = {
     user: 'gamer1',
     password: 'gamer1',
 };
 
 
-//CREATE USERS
+//Crear Usuarios
 const formCreate = document.getElementById('formCreate');
 const nombreApellidoInput = document.getElementById('nombreApellido');
 const nickNameInput = document.getElementById('userCreate');
@@ -90,7 +90,6 @@ formLogin.onsubmit = function (e) {
     }
 }
 
-// Funcion Ocultar para divs:
 function Ocultar() {
     setTimeout(function () {
         const alertas = $(".alert")

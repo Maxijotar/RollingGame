@@ -1,8 +1,10 @@
 
 body{
-	background: rgb(224,11,124);
-background: linear-gradient(0deg, rgba(224,11,124,1) 0%, rgba(26,210,177,1) 100%);
-}
+	background-image: url(./cards/4735965.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;}
 
 /* nav login */
 
@@ -208,6 +210,7 @@ span.psw {
 	height: 330px;
 	width: 100%;
 	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	object-fit: cover;
 }
 
 .ticket-container {

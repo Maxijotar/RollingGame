@@ -1,7 +1,7 @@
 @media (min-width: 1199px){
     body{
         margin: 0%;
-        background: url(./imageneslogin/logindesktop.svg) ;
+        background: url(./imageneslogin/RG_horizontal.png) ;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -10,7 +10,7 @@
 @media (max-width: 1199px){
     body{
         margin: 0%;
-        background: url(./imageneslogin/loginmovil.svg);
+        background: url(./imageneslogin/RG_vertical.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

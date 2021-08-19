@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Proyecto Individual</title>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="container bg-primary rounded p-4 my-4 text-white">
+        <div class="row">
+            <div class="d-flex justify-content-between col-12">
+                <h3 class="d-inline">Panel Administrador</h3>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Agregar Juego
+                </button>
+            </div>
+            <div class="bg-primary">
+                <table class="table table-dark table-striped mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Juego</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reportar a un Jugador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-agregar">
+                        
+                        <div class="mb-1">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" id="titulo" class="form-control" required maxlength="30">
+                        </div>
+                        <div class="mb-1">
+                            <label for="imagen">Imagen</label>
+                            <input type="text" id="imagen" class="form-control" required maxlength="10000">
+                        </div>
+                        <div class="mb-1">
+                            <label for="descripcion">Descripcion</label>
+                            <input type="text" id="descripcion" class="form-control" required maxlength="100">
+                        </div>
+                        <div class="mb-1">
+                            <label for="precio">Precio</label>
+                            <input type="number" id="precio" class="form-control" placeholder="" required max="99">
+                        </div>
+                        <div class="mb-1">
+                                <label for="precioDescuento">Precio</label>
+                                <input type="text" id="precioDescuento" class="form-control" placeholder=""
+                                    required max="99">
+                            </div>
+                            
+                            <div>
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" required class="form-select">
+                                    <option>Accion</option>
+                                    <option>Aventura</option>
+                                    <option>RPG</option>
+                                    <option>Pelea</option>
+                                </select>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nota -->
+    <div class="modal fade" id="modalDetalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Precio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="detalleNota" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Editar Juego -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Juego</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="p-4" id="formularioEditar">
+                        
+                    <div class="mb-1">
+                        <label for="tituloEditar">Titulo</label>
+                        <input type="text" id="tituloEditar" class="form-control" required maxlength="30">
+                    </div>
+                    <div class="mb-1">
+                        <label for="imagenEditar">Imagen</label>
+                        <input type="text" id="imagenEditar" class="form-control" required maxlength="10000">
+                    </div>
+                    <div class="mb-1">
+                        <label for="descripcionEditar">Descripcion</label>
+                        <input type="text" id="descripcionEditar" class="form-control" required maxlength="100">
+                    </div>
+                    <div class="mb-1">
+                        <label for="precioEditar">Precio</label>
+                        <input type="number" id="precioEditar" class="form-control" placeholder="" required max="99">
+                    </div>
+                    <div class="mb-1">
+                            <label for="precioDescuentoEditar">Precio con Descuento</label>
+                            <input type="text" id="precioDescuentoEditar" class="form-control" placeholder=""
+                                required max="99">
+                        </div>
+                        
+                        <div>
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" required class="form-select">
+                                <option>Accion</option>
+                                <option>Aventura</option>
+                                <option>RPG</option>
+                                <option>Pelea</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./admin.js"></script>
+
+</body>
+
+</html>

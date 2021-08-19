@@ -1,0 +1,36 @@
+body {
+    background-image: url(./imageneslogin/4735965.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+}
+
+
+section {
+    margin-top: 50px;
+}
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 6.2rem;
+    margin-bottom: 2rem;
+    color: cyan;
+}
+.formulario label{
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: cyan;
+}
+.boton {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.boton{
+    font-family: 'VT323', monospace;
+
+}

@@ -1,0 +1,25 @@
+body {
+    background-image: url(./imageneslogin/4735965.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8rem;
+}
+.Texto1 {
+    font-family: "VT323", monospace;
+    font-size: 4rem;
+    text-align: justify;
+    color: aqua;
+}
+
+.nosotrosH {
+    height: 800px;
+}
